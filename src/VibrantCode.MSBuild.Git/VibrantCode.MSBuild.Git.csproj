@@ -3,6 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <BuildOutputTargetFolder>build</BuildOutputTargetFolder>
+    <Authors>Andrew Stanton-Nurse</Authors>
+    <Description>
+      Provides simple MSBuild integration to add the Git Commit Hash and Git Branch Name to the current build as MSBuild properties.
+    </Description>
+    <Copyright>Copyright Andrew Stanton-Nurse 2017</Copyright>
+    <PackageTags>msbuild git commit hash branch</PackageTags>
+    <PackageProjectUrl>https://github.com/anurse/VibrantCode.MSBuild</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/anurse/VibrantCode.MSBuild/master/LICENSE.txt</PackageLicenseUrl>
     <Version>0.1.0</Version>
   </PropertyGroup>
 

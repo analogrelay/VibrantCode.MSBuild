@@ -1,6 +1,6 @@
 <Project>
     <Target Name="GetGitInformation" BeforeTargets="BeforeBuild" DependsOnTargets="_CheckForInvalidConfigurationAndPlatform" Condition="'$(AutomaticGetGitInformation)' != 'false'">
-        <GetGitInformation ProjectDirectory="$(MSBuildProjectDirectory)"
+        <GetGitInformation ProjectDirectory="$(MSBuildProjectDirectory)">
             <Output TaskParameter="CommitHash" PropertyName="Git_CommitHash" />
             <Output TaskParameter="BranchName" PropertyName="Git_BranchName" />
         </GetGitInformation>

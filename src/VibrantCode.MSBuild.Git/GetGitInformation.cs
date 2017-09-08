@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.IO;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
@@ -20,11 +21,13 @@ namespace VibrantCode.MSBuild.Git
         /// <summary>
         /// Output parameter: Provides the Commit Hash
         /// </summary>
+        [Output]
         public string CommitHash { get; set; }
 
         /// <summary>
         /// Output parameter: Provides the Branch Name
         /// </summary>
+        [Output]
         public string BranchName { get; set; }
 
         public override bool Execute()
@@ -54,7 +57,7 @@ namespace VibrantCode.MSBuild.Git
                 return true;
             }
 
-            var headRef = File.ReadAllText(headFile);
+            var headRef = File.ReadAllText(headFile).Trim();
             if(!headRef.StartsWith("ref: "))
             {
                 // We're on a detached head
@@ -82,7 +85,7 @@ namespace VibrantCode.MSBuild.Git
                 return true;
             }
 
-            CommitHash = File.ReadAllText(refFile);
+            CommitHash = File.ReadAllText(refFile).Trim();
 
             return true;
         }
