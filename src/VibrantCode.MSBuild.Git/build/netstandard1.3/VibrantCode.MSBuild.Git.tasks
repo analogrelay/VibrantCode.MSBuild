@@ -1,0 +1,3 @@
+<Project>
+    <UsingTask TaskName="GetGitInformation" AssemblyFile="$(MSBuildThisFileDirectory)/VibrantCode.MSBuild.Git.dll" />
+</Project>
