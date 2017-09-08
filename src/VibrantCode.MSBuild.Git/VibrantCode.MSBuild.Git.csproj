@@ -11,7 +11,7 @@
     <PackageTags>msbuild git commit hash branch</PackageTags>
     <PackageProjectUrl>https://github.com/anurse/VibrantCode.MSBuild</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/anurse/VibrantCode.MSBuild/master/LICENSE.txt</PackageLicenseUrl>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
